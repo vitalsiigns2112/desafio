@@ -1,0 +1,33 @@
+@font-face {
+  font-family: roboto;
+  src: local('src/assets/fonts/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: roboto;
+  src: local('src/assets/fonts/Roboto-Bold.ttf');
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  font-family: roboto sans-serif;
+}
+body {
+  margin: 0;
+}
+main {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}

@@ -1,11 +1,8 @@
 
 .main {
-  outline: 1px solid blue;
   margin-top: 20px;
   &__inner {
-    outline: 1px solid green;
     &__services {
-      outline: 1px solid red;
       display: flex;
       flex-direction: column;
 

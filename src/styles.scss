@@ -23,18 +23,36 @@ h1 {
 
 .container {
   width: 100%;
-  max-width: 400px;
+  /*max-width: 400px;*/
+  margin: 0 auto;
 }
 
 a {
   color: #666D81;
   text-decoration: none;
 }
+.title {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title-bold {
+  margin-top: 5px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+.read-more {
+  font-size: 14px;
+  text-transform: uppercase;
+}
 
 
 @media only screen and (min-width: 650px) {
   .container {
-    max-width: 500px;
+    max-width: 90%;
   }
 }
 

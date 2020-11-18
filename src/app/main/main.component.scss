@@ -1,0 +1,137 @@
+
+.main {
+  outline: 1px solid blue;
+  margin-top: 20px;
+  &__inner {
+    outline: 1px solid green;
+    &__services {
+      outline: 1px solid red;
+      display: flex;
+      flex-direction: column;
+
+      &__icon {
+        display: flex;
+        justify-content: center;
+      }
+
+      &__title {
+      }
+
+      &__title-bold {
+      }
+
+      &__boxes {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+
+        &__project {
+          position: relative;
+          background-image: url(../../assets/img/bg_project.png);
+          background-size: cover;
+          height: 280px;
+        }
+
+        &__leading {
+          background-color: #FF4F01;
+          padding: 30px;
+          color: #fff;
+          height: 218px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          &__text {
+            font-size: 28px;
+            width: 85%;
+          }
+          &__read {
+
+          }
+        }
+      }
+
+      &__cols {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        &__box {
+          padding: 0 20px;
+          &__title {
+            font-weight: bold;
+            margin-top: 30px;
+            font-size: 19px;
+          }
+          &__text {
+            text-align: justify;
+            margin-top: 20px;
+          }
+          &__read {
+            margin-top: 20px;
+            color: #FF4F01;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+
+@media only screen and (min-width: 650px) {
+
+  .main {
+    &__inner {
+      &__services {
+
+        &__boxes {
+          flex-direction: row;
+          justify-content: space-between;
+          width: 100%;
+          &__project {
+            width: 62%;
+            max-width: 751px;
+          }
+
+          &__leading {
+            width: 36%;
+            max-width: 315px;
+            height: 280px;
+            &__text {
+              font-size: 21px;
+            }
+          }
+        }
+
+        &__cols {
+          flex-direction: row;
+          flex-wrap: wrap;
+          &__box {
+            width: 50%;
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 960px) {
+
+  .main {
+    &__inner {
+      &__services {
+
+        &__cols {
+          &__box {
+            width: 33%;
+            padding: 0 10px;
+          }
+        }
+
+      }
+    }
+  }
+
+}

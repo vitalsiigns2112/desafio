@@ -1,6 +1,6 @@
 
 .main {
-  margin-top: 20px;
+  margin-top: 55px;
   &__inner {
     &__services {
       display: flex;
@@ -9,12 +9,6 @@
       &__icon {
         display: flex;
         justify-content: center;
-      }
-
-      &__title {
-      }
-
-      &__title-bold {
       }
 
       &__boxes {
@@ -42,7 +36,9 @@
             width: 85%;
           }
           &__read {
-
+            &__line {
+              border-bottom: 1px solid #fbf8f833;
+            }
           }
         }
       }
@@ -97,6 +93,12 @@
             &__text {
               font-size: 21px;
             }
+
+            &__read {
+              &__text {
+                width: 136px;
+              }
+            }
           }
         }
 
@@ -119,6 +121,17 @@
   .main {
     &__inner {
       &__services {
+
+        &__boxes {
+
+          &__leading {
+            &__read {
+              &__text {
+                width: 108px;
+              }
+            }
+          }
+        }
 
         &__cols {
           &__box {

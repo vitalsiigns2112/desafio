@@ -48,15 +48,31 @@ a {
   font-size: 14px;
   text-transform: uppercase;
   position: relative;
-  width: 85px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 
-  .read-line {
-    position: absolute;
-    width: 17px;
+  .read-more-text {
+    width: 85px;
+    cursor: pointer;
+  }
+
+  .read-more-line {
+    position: relative;
+    width: 80%;
     height: 20px;
-    border-bottom: 1px solid;
-    top: -11px;
-    right: -15px;
+    border-bottom: 1px solid #80808033;
+    bottom: 10px;
+
+    .read-more-small {
+      position: absolute;
+      width: 17px;
+      height: 20px;
+      border-bottom: 1px solid;
+      top: 0;
+      left: 0;
+    }
   }
 
 }
@@ -85,6 +101,13 @@ a {
 @media only screen and (min-width: 650px) {
   .container {
     max-width: 90%;
+  }
+
+  .read-more {
+
+    .read-more-text {
+      width: 95px;
+    }
   }
 }
 

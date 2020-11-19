@@ -92,7 +92,7 @@
 
           &__leading {
             width: 36%;
-            max-width: 315px;
+            max-width: 280px;
             height: 280px;
             &__text {
               font-size: 21px;
@@ -124,6 +124,25 @@
           &__box {
             width: 33%;
             padding: 0 10px;
+          }
+        }
+
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .main {
+    &__inner {
+      &__services {
+
+        &__boxes {
+          &__project {
+            width: 70%;
+            max-width: 820px;
           }
         }
 

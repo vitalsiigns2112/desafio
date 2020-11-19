@@ -166,6 +166,7 @@
 @media only screen and (min-width: 960px) {
   .form {
     &__inner {
+      max-height: 956px;
       &__service {
         padding-top: 80px;
         height: 450px;
@@ -199,3 +200,5 @@
 
   }
 }
+
+

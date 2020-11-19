@@ -1,0 +1,233 @@
+.footer {
+
+  &__inner {
+    &__updates {
+      background-color: #FF4F01;
+      min-height: 200px;
+      &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+        &__text {
+          color: #fff;
+          font-size: 19px;
+          font-weight: bold;
+          margin-top: 28px;
+          text-align: center;
+        }
+        &__box {
+          display: flex;
+          flex-direction: column;
+          margin-top: 15px;
+          &__input {
+            max-width: 555px;
+            margin: 0 auto;
+          }
+          &__button {
+            margin: 15px auto 0;
+            width: 120px;
+          }
+        }
+      }
+    }
+
+    &__rodape {
+      background-image: url(../../assets/img/bg_footer.svg);
+      background-size: cover;
+      min-height: 590px;
+      padding-bottom: 25px;
+
+      &__content {
+        padding: 0 15px;
+
+        &__boxes {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          &__col {
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 30px;
+            &__title {
+              font-weight: bold;
+              color: #fff;
+              margin-bottom: 20px;
+              font-size: 20px;
+            }
+            &__list {
+              &__item {
+                list-style: none;
+                margin-bottom: 10px;
+                &__link {
+                  text-decoration: none;
+                  color: #B6BBCC;
+                  &.selected {
+                    color: #FF4F01;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        &__lines {
+          margin-top: 10px;
+          position: relative;
+          z-index: 1;
+          width: 100%;
+          height: 2px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+          &__line {
+            position: absolute;
+            z-index: 2;
+            width: 20px;
+            height: 2px;
+            bottom: -1px;
+            border-bottom: 1px solid #FF4F01;
+            &.left {
+              left: 0;
+            }
+            &.right {
+              right: 0;
+            }
+          }
+        }
+        &__copyright {
+          margin-top: 20px;
+          color: #B6BBCC;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 650px) {
+
+  .footer {
+    &__inner {
+      &__rodape {
+        min-height: 375px;
+        &__content {
+          &__boxes {
+            flex-direction: row;
+            flex-wrap: wrap;
+            &__col {
+              text-align: left;
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}
+
+@media only screen and (min-width: 960px) {
+
+  .footer {
+    &__inner {
+
+      &__updates {
+        min-height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__content {
+          flex-direction: row;
+          justify-content: space-between;
+          &__text {
+            margin-top: 11px;
+            height: 28px;
+            max-width: 250px;
+          }
+          &__box {
+            width: 57%;
+            max-width: 450px;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0;
+            &__input {
+              max-width: 450px;
+              width: 70%;
+              margin: 0;
+              height: 46px;
+            }
+            &__button {
+              margin: 0;
+            }
+          }
+
+        }
+      }
+
+      &__rodape {
+        &__content {
+          &__boxes {
+            &__col {
+              width: 33%;
+              margin-top: 40px;
+              &__list {
+                &__item {
+                  &__link {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .footer {
+    &__inner {
+
+      &__updates {
+        &__content {
+          &__text {
+            font-size: 22px;
+            max-width: 300px;
+            margin-top: 27px;
+          }
+          &__box {
+            max-width: unset;
+            width: 580px;
+            margin: 0;
+            &__input {
+              height: 76px;
+              max-width: 430px;
+              width: 72%;
+            }
+            &__button {
+              width: 26%;
+              font-size: 13px;
+            }
+          }
+
+        }
+      }
+
+      &__rodape {
+        &__content {
+          &__boxes {
+            &__col {
+              width: 20%;
+              margin-top: 65px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

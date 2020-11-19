@@ -1,0 +1,55 @@
+.header {
+  margin-top: 20px;
+  &__inner {
+    min-height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__slides {
+      position: absolute;
+      top: 0;
+      outline: 1px solid blue;
+      &__slide {
+        outline: 1px dashed red;
+        min-height: 300px;
+        width: 100vw;
+        &.slide-one {
+          background-image: url(../../assets/img/bg_header.png);
+          background-size: cover;
+        }
+      }
+    }
+
+    &__controls {
+      position: absolute;
+      bottom: 10px;
+      height: 10px;
+      width: 90%;
+      max-width: 800px;
+      left: 50%;
+      transform: translateX(-50%);
+      outline: 1px solid #fff;
+    }
+
+    &__arrows {
+      position: relative;
+      width: 90%;
+      max-width: 800px;
+      height: 55px;
+      margin: 0 auto;
+      &__left {
+        left: 0;
+        width: 35px;
+        position: absolute;
+      }
+      &__right {
+        right: 0;
+        width: 35px;
+        position: absolute;
+      }
+    }
+
+  }
+}

@@ -12,7 +12,7 @@
 
     <div class="form__inner__fm">
 
-      <div class="form__inner__fm__contact"> <!-- bg laranja -->
+      <div class="form__inner__fm__contact">
         <div class="form__inner__fm__contact__content">
           <div class="form__inner__fm__contact__content__icon">
             <img  class="form__inner__fm__contact__content__icon__img" src="../../assets/img/icon-blue.svg" alt="icone azul">
@@ -38,32 +38,32 @@
           <div class="form__inner__fm__faqs__content__title-bold title-bold">Frequently Asked Questions</div>
           <div class="form__inner__fm__faqs__content__acoordion">
 
-            <div class="form__inner__fm__faqs__content__acoordion__box">
-              <div class="form__inner__fm__faqs__content__acoordion__box__top">
+            <div class="form__inner__fm__faqs__content__acoordion__box accordion-one" [class.box-selected]="accordionOne">
+              <div class="form__inner__fm__faqs__content__acoordion__box__top" (click)="openBox('accordionOne')">
                 <div class="form__inner__fm__faqs__content__acoordion__box__top__title">How to process the funtion for construction?</div>
                 <div class="form__inner__fm__faqs__content__acoordion__box__top__ball"></div>
               </div>
               <div class="form__inner__fm__faqs__content__acoordion__box__description">There are many variations of passages of available but the majority have suffered alteration in that some form by injected randomised words which don’t look even as slightly believable now.</div>
             </div>
 
-            <div class="form__inner__fm__faqs__content__acoordion__box">
-              <div class="form__inner__fm__faqs__content__acoordion__box__top">
+            <div class="form__inner__fm__faqs__content__acoordion__box accordion-two" [class.box-selected]="accordionTwo">
+              <div class="form__inner__fm__faqs__content__acoordion__box__top" (click)="openBox('accordionTwo')">
                 <div class="form__inner__fm__faqs__content__acoordion__box__top__title">Where should I incorporate my business?</div>
                 <div class="form__inner__fm__faqs__content__acoordion__box__top__ball"></div>
               </div>
               <div class="form__inner__fm__faqs__content__acoordion__box__description">There are many variations of passages of available but the majority have suffered alteration in that some form by injected randomised words which don’t look even as slightly believable now.</div>
             </div>
 
-            <div class="form__inner__fm__faqs__content__acoordion__box">
-              <div class="form__inner__fm__faqs__content__acoordion__box__top">
+            <div class="form__inner__fm__faqs__content__acoordion__box accordion-three" [class.box-selected]="accordionThree">
+              <div class="form__inner__fm__faqs__content__acoordion__box__top" (click)="openBox('accordionThree')">
                 <div class="form__inner__fm__faqs__content__acoordion__box__top__title">How there are many variations of passages</div>
                 <div class="form__inner__fm__faqs__content__acoordion__box__top__ball"></div>
               </div>
               <div class="form__inner__fm__faqs__content__acoordion__box__description">There are many variations of passages of available but the majority have suffered alteration in that some form by injected randomised words which don’t look even as slightly believable now.</div>
             </div>
 
-            <div class="form__inner__fm__faqs__content__acoordion__box">
-              <div class="form__inner__fm__faqs__content__acoordion__box__top">
+            <div class="form__inner__fm__faqs__content__acoordion__box accordion-four" [class.box-selected]="accordionFour">
+              <div class="form__inner__fm__faqs__content__acoordion__box__top" (click)="openBox('accordionFour')">
                 <div class="form__inner__fm__faqs__content__acoordion__box__top__title">What about our safety measures?</div>
                 <div class="form__inner__fm__faqs__content__acoordion__box__top__ball"></div>
               </div>

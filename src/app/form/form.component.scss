@@ -58,9 +58,6 @@
               font-weight: bold;
               font-family: 'Roboto';
             }
-            &__button {
-
-            }
           }
         }
 
@@ -71,9 +68,6 @@
         min-height: 300px;
         &__content {
           padding: 20px;
-          &__icon {
-
-          }
           &__title {
             color: #666D81;
             text-align: left;
@@ -90,7 +84,7 @@
               margin-top: 15px;
               height: 40px;
               overflow: hidden;
-              transition: 1s;
+              transition: 0.5s;
               &__top {
                 display: flex;
                 flex-direction: row;
@@ -126,8 +120,8 @@
 }
 
 .form__inner__fm__faqs__content__acoordion__box.box-selected {
-  height: unset;
-  transition: 1s;
+  height: 118px;
+  transition: 0.5s;
   .form__inner__fm__faqs__content__acoordion__box__title {
     color: #FF4F01;
   }
@@ -154,12 +148,12 @@
           }
         }
       }
-
-      &__fm {
-
-      }
     }
 
+  }
+
+  .form__inner__fm__faqs__content__acoordion__box.box-selected {
+    height: 85px;
   }
 }
 
@@ -199,6 +193,9 @@
     }
 
   }
-}
 
+  .form__inner__fm__faqs__content__acoordion__box.box-selected {
+    height: 115px;
+  }
+}
 

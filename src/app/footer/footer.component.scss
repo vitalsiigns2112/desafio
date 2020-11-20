@@ -38,8 +38,26 @@
       min-height: 590px;
       padding-bottom: 25px;
 
+      &__bg-container {
+        position: absolute;
+        width: 100vw;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        display: none;
+        &__box {
+          width: 800px;
+          height: 295px;
+          background: rgba(255, 255, 255, 0.07);
+          margin: 0 auto;
+        }
+      }
+
       &__content {
         padding: 0 15px;
+        position: relative;
+        z-index: 2;
 
         &__boxes {
           display: flex;
@@ -78,7 +96,7 @@
           z-index: 1;
           width: 100%;
           height: 2px;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.12);
           &__line {
             position: absolute;
             z-index: 2;
@@ -221,12 +239,33 @@
       }
 
       &__rodape {
+        min-height: 420px;
+        &__bg-container {
+          display: flex;
+        }
         &__content {
           &__boxes {
             &__col {
               width: 20%;
-              margin-top: 65px;
+              margin-top: 90px;
+
+              &__title {
+                font-size: 18px;
+              }
+
+              &__list {
+                &__item {
+                  &__link {
+                    font-size: 12px;
+                  }
+                }
+              }
             }
+          }
+
+          &__copyright {
+            font-size: 13px;
+            margin-top: 53px;
           }
         }
       }

@@ -70,12 +70,12 @@ export class FormComponent implements OnInit {
   onSubmit() {
 
     // Esse código não vai ser chamado porque a validação tá sendo feita pelo método setCustomValidity()
-    // Caso queira verificar a validação básica só com javascript, é só tirar o atributo required dos campo input e textarea
+    // Caso queira verificar a validação básica só com javascript, é só tirar o atributo required dos campo input e textarea e trocar o type do input email pra "text"
 
     // Expressão regular pra validar email
     const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-    //const rp = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+    // Expressão regular pra validar telefone
     const rp = /[0-9]{4}-[0-9]{4}$/;
 
     if(this.inputName.value == "") {

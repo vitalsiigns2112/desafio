@@ -26,6 +26,7 @@
           &__button {
             margin: 15px auto 0;
             width: 120px;
+            cursor: pointer;
           }
         }
       }
@@ -61,6 +62,7 @@
                 &__link {
                   text-decoration: none;
                   color: #B6BBCC;
+                  cursor: pointer;
                   &.selected {
                     color: #FF4F01;
                   }

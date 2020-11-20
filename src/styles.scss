@@ -1,1 +1,125 @@
-/* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  color: #666D81;
+  overflow-x: hidden;
+}
+main {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.container {
+  width: 100%;
+  /*max-width: 400px;*/
+  margin: 0 auto;
+}
+
+a {
+  color: #666D81;
+  text-decoration: none;
+}
+.title {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title-bold {
+  margin-top: 5px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+.read-more {
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+
+  .read-more-text {
+    width: 85px;
+    cursor: pointer;
+  }
+
+  .read-more-line {
+    position: relative;
+    width: 80%;
+    height: 20px;
+    border-bottom: 1px solid #80808033;
+    bottom: 10px;
+
+    .read-more-small {
+      position: absolute;
+      width: 17px;
+      height: 20px;
+      border-bottom: 1px solid;
+      top: 0;
+      left: 0;
+    }
+  }
+
+}
+
+.form-input {
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+  height: 40px;
+  font-weight: bold;
+}
+.form-button {
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  padding: 17px;
+  background-color: #131D3B;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+
+
+@media only screen and (min-width: 650px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .read-more {
+
+    .read-more-text {
+      width: 95px;
+    }
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .container {
+    max-width: 821px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}

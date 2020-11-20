@@ -1,0 +1,80 @@
+<div class="form">
+  <div class="form__inner">
+
+    <div class="form__inner__service">
+      <div class="form__inner__service__content container">
+        <div class="form__inner__service__content__title title-bold">Dustri provides the best service for sustainable progress</div>
+        <div class="form__inner__service__content__play">
+          <img class="form__inner__service__content__play__img" src="../../assets/img/icon_play.svg" alt="botão play">
+        </div>
+      </div>
+    </div>
+
+    <div class="form__inner__fm">
+
+      <div class="form__inner__fm__contact">
+        <div class="form__inner__fm__contact__content">
+          <div class="form__inner__fm__contact__content__icon">
+            <img  class="form__inner__fm__contact__content__icon__img" src="../../assets/img/icon-blue.svg" alt="icone azul">
+          </div>
+          <div class="form__inner__fm__contact__content__title title">Contact Us</div>
+          <div class="form__inner__fm__contact__content__title-bold title-bold">Request a Quote</div>
+          <form action="" class="form__inner__fm__contact__content__formulario" (submit)="onSubmit()">
+            <input type="text" class="form__inner__fm__contact__content__formulario__input form-input" id="input-name" placeholder="Your Name" required (invalid)="setCustom('name')" (change)="clearCustom('name')">
+            <input type="email" class="form__inner__fm__contact__content__formulario__input form-input" id="input-email" placeholder="Email Address" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" (invalid)="setCustom('email')" (change)="clearCustom('email')">
+            <input type="text" class="form__inner__fm__contact__content__formulario__input form-input" id="input-phone" placeholder="Phone Number" required pattern="(\d{4}-\d{4})" (invalid)="setCustom('phone')" (change)="clearCustom('phone')">
+            <textarea class="form__inner__fm__contact__content__formulario__textarea" id="input-textarea" placeholder="Write Message" required (invalid)="setCustom('textarea')" (change)="clearCustom('textarea')"></textarea>
+            <button type="submit" class="form__inner__fm__contact__content__formulario__button form-button">Get a Free Quote</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="form__inner__fm__faqs">
+        <div class="form__inner__fm__faqs__content">
+          <div class="form__inner__fm__faqs__content__icon">
+            <img  class="form__inner__fm__faqs__content__icon__img" src="../../assets/img/icon-orange.svg" alt="icone laranja">
+          </div>
+          <div class="form__inner__fm__faqs__content__title title">Our Faqs</div>
+          <div class="form__inner__fm__faqs__content__title-bold title-bold">Frequently Asked Questions</div>
+          <div class="form__inner__fm__faqs__content__acoordion">
+
+            <div class="form__inner__fm__faqs__content__acoordion__box accordion-one" [class.box-selected]="accordionOne">
+              <div class="form__inner__fm__faqs__content__acoordion__box__top" (click)="openBox('accordionOne')">
+                <div class="form__inner__fm__faqs__content__acoordion__box__top__title">How to process the funtion for construction?</div>
+                <div class="form__inner__fm__faqs__content__acoordion__box__top__ball"></div>
+              </div>
+              <div class="form__inner__fm__faqs__content__acoordion__box__description">There are many variations of passages of available but the majority have suffered alteration in that some form by injected randomised words which don’t look even as slightly believable now.</div>
+            </div>
+
+            <div class="form__inner__fm__faqs__content__acoordion__box accordion-two" [class.box-selected]="accordionTwo">
+              <div class="form__inner__fm__faqs__content__acoordion__box__top" (click)="openBox('accordionTwo')">
+                <div class="form__inner__fm__faqs__content__acoordion__box__top__title">Where should I incorporate my business?</div>
+                <div class="form__inner__fm__faqs__content__acoordion__box__top__ball"></div>
+              </div>
+              <div class="form__inner__fm__faqs__content__acoordion__box__description">There are many variations of passages of available but the majority have suffered alteration in that some form by injected randomised words which don’t look even as slightly believable now.</div>
+            </div>
+
+            <div class="form__inner__fm__faqs__content__acoordion__box accordion-three" [class.box-selected]="accordionThree">
+              <div class="form__inner__fm__faqs__content__acoordion__box__top" (click)="openBox('accordionThree')">
+                <div class="form__inner__fm__faqs__content__acoordion__box__top__title">How there are many variations of passages</div>
+                <div class="form__inner__fm__faqs__content__acoordion__box__top__ball"></div>
+              </div>
+              <div class="form__inner__fm__faqs__content__acoordion__box__description">There are many variations of passages of available but the majority have suffered alteration in that some form by injected randomised words which don’t look even as slightly believable now.</div>
+            </div>
+
+            <div class="form__inner__fm__faqs__content__acoordion__box accordion-four" [class.box-selected]="accordionFour">
+              <div class="form__inner__fm__faqs__content__acoordion__box__top" (click)="openBox('accordionFour')">
+                <div class="form__inner__fm__faqs__content__acoordion__box__top__title">What about our safety measures?</div>
+                <div class="form__inner__fm__faqs__content__acoordion__box__top__ball"></div>
+              </div>
+              <div class="form__inner__fm__faqs__content__acoordion__box__description">There are many variations of passages of available but the majority have suffered alteration in that some form by injected randomised words which don’t look even as slightly believable now.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

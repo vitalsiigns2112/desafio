@@ -10,12 +10,38 @@
     &__slides {
       position: absolute;
       top: 0;
-      outline: 1px solid blue;
+      overflow: hidden;
+      min-height: 300px;
+      width: 100vw;
       &__slide {
-        outline: 1px dashed red;
         min-height: 300px;
         width: 100vw;
         padding-top: 45px;
+        top: 0;
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transition: 1s;
+        &.slide-one {
+          background-image: linear-gradient(rgba(11, 7, 41, 0.5), rgba(11, 7, 41, 0.5)), url(../../assets/img/bg_header.png);
+          background-size: cover;
+        }
+        &.slide-two {
+          background-image: linear-gradient(rgba(6, 153, 40, 0.5),rgba(3, 51, 13, 0.5)), url(../../assets/img/bg_header.png);
+          background-size: cover;
+        }
+        &.slide-three {
+          background-image: linear-gradient(rgba(39, 36, 76, 0.5), rgba(4, 179, 74, 0.5%)), url(../../assets/img/bg_header.png);
+          background-size: cover;
+        }
+        &.slide-four {
+          background-image: linear-gradient(rgba(240, 13, 13, 0.137), rgba(226, 10, 10, 0.5)), url(../../assets/img/bg_header.png);
+          background-size: cover;
+        }
+        &.slide-active {
+          opacity: 1;
+          transition: 1s;
+        }
         &__top-text {
           font-size: 14px;
           color: #fff;
@@ -63,10 +89,7 @@
           margin: 25px auto 0;
           display: block;
         }
-        &.slide-one {
-          background-image: linear-gradient(rgba(11, 7, 41, 0.5), rgba(11, 7, 41, 0.5)), url(../../assets/img/bg_header.png);
-          background-size: cover;
-        }
+
       }
     }
 
@@ -143,6 +166,7 @@
       height: 400px;
 
       &__slides {
+        height: 400px;
         &__slide {
           height: 400px;
           padding-top: 88px;

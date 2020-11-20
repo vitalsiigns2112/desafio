@@ -3,7 +3,37 @@
 
     <div class="header__inner__slides">
 
-      <div class="header__inner__slides__slide slide-one">
+      <div class="header__inner__slides__slide slide-one slide-active">
+        <div class="header__inner__slides__slide__top-text">Build Anything With Us</div>
+        <div class="header__inner__slides__slide__title">
+          <div class="header__inner__slides__slide__title__text">We're always ready for a challenge</div>
+          <div class="header__inner__slides__slide__title__top-left"></div>
+          <div class="header__inner__slides__slide__title__bottom-right"></div>
+        </div>
+        <button class="header__inner__slides__slide__button">Discover More</button>
+      </div>
+
+      <div class="header__inner__slides__slide slide-two">
+        <div class="header__inner__slides__slide__top-text">Build Anything With Us</div>
+        <div class="header__inner__slides__slide__title">
+          <div class="header__inner__slides__slide__title__text">We're always ready for a challenge</div>
+          <div class="header__inner__slides__slide__title__top-left"></div>
+          <div class="header__inner__slides__slide__title__bottom-right"></div>
+        </div>
+        <button class="header__inner__slides__slide__button">Discover More</button>
+      </div>
+
+      <div class="header__inner__slides__slide slide-three">
+        <div class="header__inner__slides__slide__top-text">Build Anything With Us</div>
+        <div class="header__inner__slides__slide__title">
+          <div class="header__inner__slides__slide__title__text">We're always ready for a challenge</div>
+          <div class="header__inner__slides__slide__title__top-left"></div>
+          <div class="header__inner__slides__slide__title__bottom-right"></div>
+        </div>
+        <button class="header__inner__slides__slide__button">Discover More</button>
+      </div>
+
+      <div class="header__inner__slides__slide slide-four">
         <div class="header__inner__slides__slide__top-text">Build Anything With Us</div>
         <div class="header__inner__slides__slide__title">
           <div class="header__inner__slides__slide__title__text">We're always ready for a challenge</div>
@@ -17,27 +47,27 @@
 
     <div class="header__inner__controls">
       <div class="header__inner__controls__container">
-        <div class="header__inner__controls__container__col col-active">
+        <div class="header__inner__controls__container__col" [class.col-active]="valorAtual == 1">
           <div class="header__inner__controls__container__col__elm"></div>
         </div>
-        <div class="header__inner__controls__container__col">
+        <div class="header__inner__controls__container__col" [class.col-active]="valorAtual == 2">
           <div class="header__inner__controls__container__col__elm"></div>
         </div>
-        <div class="header__inner__controls__container__col">
+        <div class="header__inner__controls__container__col" [class.col-active]="valorAtual == 3">
           <div class="header__inner__controls__container__col__elm"></div>
         </div>
-        <div class="header__inner__controls__container__col">
+        <div class="header__inner__controls__container__col" [class.col-active]="valorAtual == 4">
           <div class="header__inner__controls__container__col__elm"></div>
         </div>
       </div>
-      <div class="header__inner__controls__number">1/4</div>
+      <div class="header__inner__controls__number">{{ valorAtual }}/{{ totalSlides }}</div>
     </div>
 
     <div class="header__inner__arrows">
-      <div class="header__inner__arrows__left">
+      <div class="header__inner__arrows__left" (click)="previous()">
         <img src="../../assets/img/icon-left.svg" alt="seta para esquerda">
       </div>
-      <div class="header__inner__arrows__right">
+      <div class="header__inner__arrows__right" (click)="next()">
         <img src="../../assets/img/icon-right.svg" alt="seta para direita">
       </div>
     </div>

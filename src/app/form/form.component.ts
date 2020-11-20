@@ -71,6 +71,13 @@ export class FormComponent implements OnInit {
 
     // Esse código não vai ser chamado porque a validação tá sendo feita pelo método setCustomValidity()
     // Caso queira verificar a validação básica só com javascript, é só tirar o atributo required dos campo input e textarea
+
+    // Expressão regular pra validar email
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    //const rp = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+    const rp = /[0-9]{4}-[0-9]{4}$/;
+
     if(this.inputName.value == "") {
       alert("Por favor, preencha o campo nome");
       return false;
@@ -79,8 +86,16 @@ export class FormComponent implements OnInit {
       alert("Por favor, preencha o campo email");
       return false;
     }
+    if(!re.test(this.inputEmail.value)) {
+      alert("Por favor, preencha o campo email no padrão correto");
+      return false;
+    }
     if(this.inputPhone.value == "") {
       alert("Por favor, preencha o campo telefone");
+      return false;
+    }
+    if(!rp.test(this.inputPhone.value)) {
+      alert("Por favor, preencha o campo telefone no padrão XXXX-XXXX");
       return false;
     }
     if(this.inputTextarea.value == "") {

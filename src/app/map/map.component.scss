@@ -2,7 +2,7 @@
   &__inner {
     &__content {
       overflow: hidden;
-      padding-bottom: 56.25%;
+      padding-bottom: 52.75%;
       position: relative;
       height: 0;
       iframe {
@@ -19,8 +19,9 @@
 @media only screen and (min-width: 960px) {
   .map {
     max-height: 640px;
+    height: 507px;
     overflow: hidden;
-    padding-bottom: 30.25%;
+    padding-bottom: 52.75%;
   }
 }
 

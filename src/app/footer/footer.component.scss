@@ -197,18 +197,19 @@
           &__text {
             font-size: 22px;
             max-width: 300px;
-            margin-top: 27px;
+            margin-top: 22px;
           }
           &__box {
             max-width: unset;
             width: 580px;
             margin: 0;
             &__input {
-              height: 76px;
+              height: 62px;
               max-width: 430px;
               width: 72%;
             }
             &__button {
+              height: 62px;
               width: 26%;
               font-size: 13px;
             }

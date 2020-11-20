@@ -19,11 +19,11 @@
           </div>
           <div class="form__inner__fm__contact__content__title title">Contact Us</div>
           <div class="form__inner__fm__contact__content__title-bold title-bold">Request a Quote</div>
-          <form action="" class="form__inner__fm__contact__content__formulario">
-            <input type="text" class="form__inner__fm__contact__content__formulario__input form-input" placeholder="Your Name" required>
-            <input type="text" class="form__inner__fm__contact__content__formulario__input form-input" placeholder="Email Address" required>
-            <input type="text" class="form__inner__fm__contact__content__formulario__input form-input" placeholder="Phone Number" required>
-            <textarea class="form__inner__fm__contact__content__formulario__textarea" placeholder="Write Message" required></textarea>
+          <form action="" class="form__inner__fm__contact__content__formulario" (submit)="onSubmit()">
+            <input type="text" class="form__inner__fm__contact__content__formulario__input form-input" id="input-name" placeholder="Your Name" required (invalid)="setCustom('name')" (change)="clearCustom('name')">
+            <input type="email" class="form__inner__fm__contact__content__formulario__input form-input" id="input-email" placeholder="Email Address" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" (invalid)="setCustom('email')" (change)="clearCustom('email')">
+            <input type="text" class="form__inner__fm__contact__content__formulario__input form-input" id="input-phone" placeholder="Phone Number" required pattern="(\d{4}-\d{4})" (invalid)="setCustom('phone')" (change)="clearCustom('phone')">
+            <textarea class="form__inner__fm__contact__content__formulario__textarea" id="input-textarea" placeholder="Write Message" required (invalid)="setCustom('textarea')" (change)="clearCustom('textarea')"></textarea>
             <button type="submit" class="form__inner__fm__contact__content__formulario__button form-button">Get a Free Quote</button>
           </form>
         </div>

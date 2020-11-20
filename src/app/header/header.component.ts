@@ -61,4 +61,8 @@ export class HeaderComponent implements OnInit {
 
   }
 
+  chooseNumber(value) {
+    this.valorAtual = value;
+  }
+
 }

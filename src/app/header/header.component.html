@@ -3,7 +3,7 @@
 
     <div class="header__inner__slides">
 
-      <div class="header__inner__slides__slide slide-one slide-active">
+      <div class="header__inner__slides__slide slide-one" [class.slide-active]="valorAtual == 1">
         <div class="header__inner__slides__slide__top-text">Build Anything With Us</div>
         <div class="header__inner__slides__slide__title">
           <div class="header__inner__slides__slide__title__text">We're always ready for a challenge</div>
@@ -13,7 +13,7 @@
         <button class="header__inner__slides__slide__button">Discover More</button>
       </div>
 
-      <div class="header__inner__slides__slide slide-two">
+      <div class="header__inner__slides__slide slide-two" [class.slide-active]="valorAtual == 2">
         <div class="header__inner__slides__slide__top-text">Build Anything With Us</div>
         <div class="header__inner__slides__slide__title">
           <div class="header__inner__slides__slide__title__text">We're always ready for a challenge</div>
@@ -23,7 +23,7 @@
         <button class="header__inner__slides__slide__button">Discover More</button>
       </div>
 
-      <div class="header__inner__slides__slide slide-three">
+      <div class="header__inner__slides__slide slide-three" [class.slide-active]="valorAtual == 3">
         <div class="header__inner__slides__slide__top-text">Build Anything With Us</div>
         <div class="header__inner__slides__slide__title">
           <div class="header__inner__slides__slide__title__text">We're always ready for a challenge</div>
@@ -33,7 +33,7 @@
         <button class="header__inner__slides__slide__button">Discover More</button>
       </div>
 
-      <div class="header__inner__slides__slide slide-four">
+      <div class="header__inner__slides__slide slide-four" [class.slide-active]="valorAtual == 4">
         <div class="header__inner__slides__slide__top-text">Build Anything With Us</div>
         <div class="header__inner__slides__slide__title">
           <div class="header__inner__slides__slide__title__text">We're always ready for a challenge</div>
@@ -47,16 +47,16 @@
 
     <div class="header__inner__controls">
       <div class="header__inner__controls__container">
-        <div class="header__inner__controls__container__col" [class.col-active]="valorAtual == 1">
+        <div class="header__inner__controls__container__col" [class.col-active]="valorAtual == 1" (click)="chooseNumber(1)">
           <div class="header__inner__controls__container__col__elm"></div>
         </div>
-        <div class="header__inner__controls__container__col" [class.col-active]="valorAtual == 2">
+        <div class="header__inner__controls__container__col" [class.col-active]="valorAtual == 2" (click)="chooseNumber(2)">
           <div class="header__inner__controls__container__col__elm"></div>
         </div>
-        <div class="header__inner__controls__container__col" [class.col-active]="valorAtual == 3">
+        <div class="header__inner__controls__container__col" [class.col-active]="valorAtual == 3" (click)="chooseNumber(3)">
           <div class="header__inner__controls__container__col__elm"></div>
         </div>
-        <div class="header__inner__controls__container__col" [class.col-active]="valorAtual == 4">
+        <div class="header__inner__controls__container__col" [class.col-active]="valorAtual == 4" (click)="chooseNumber(4)">
           <div class="header__inner__controls__container__col__elm"></div>
         </div>
       </div>
